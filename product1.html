@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-lg-top navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"><img src="Images/Ma-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product Image -->
+                <div class="col-md-6 mb-4">
+                    <img src="Images/product1.jpg" alt="Product Image" class="img-fluid">
+                </div>
+                <!-- Product Info -->
+                <div class="col-md-6">
+                    <h1 class="product-title">Product Name</h1>
+                    <p class="product-price">$29.99</p>
+                    <p class="product-description">A brief description of the product highlighting its key features and benefits.</p>
+                    <form class="product-form">
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" value="1" min="1">
+                        </div>
+                        <button type="submit" class="btn add-to-cart">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <!-- Product Details Tabs -->
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="specifications-tab" data-toggle="tab" href="#specifications" role="tab" aria-controls="specifications" aria-selected="false">Specifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <p>Here you can provide a detailed description of the product. Highlight the unique selling points, features, and any other relevant information that can help the customer make a purchasing decision.</p>
+                        </div>
+                        <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                            <table class="table">
+                                <tr>
+                                    <th>Specification 1</th>
+                                    <td>Detail</td>
+                                </tr>
+                                <tr>
+                                    <th>Specification 2</th>
+                                    <td>Detail</td>
+                                </tr>
+                                <tr>
+                                    <th>Specification 3</th>
+                                    <td>Detail</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="review">
+                                <p><strong>John Doe</strong> - <em>5 stars</em></p>
+                                <p>Great product! Highly recommended.</p>
+                            </div>
+                            <div class="review">
+                                <p><strong>Jane Smith</strong> - <em>4 stars</em></p>
+                                <p>Good quality, but a bit pricey.</p>
+                            </div>
+                            <!-- Add more reviews as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Related Products -->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h2>Related Products</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Images/product2.jpg" class="card-img-top" alt="Related Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Related Product 1</h5>
+                                    <p class="card-text">$25.99</p>
+                                    <a href="product2.html" class="btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Images/product3.jpg" class="card-img-top" alt="Related Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Related Product 2</h5>
+                                    <p class="card-text">$39.99</p>
+                                    <a href="product3.html" class="btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Images/product4.jpg" class="card-img-top" alt="Related Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Related Product 3</h5>
+                                    <p class="card-text">$55.99</p>
+                                    <a href="product4.html" class="btn">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="about.html" class="text-light">About Us</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p>Email: <a href="mailto:info@example.com" class="text-light">info@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" class="text-light">+123 456 7890</a></p>
+                    <p>Address: 1234 Street Name, City, State, ZIP</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for cart icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

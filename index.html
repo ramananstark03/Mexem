@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-lg-top navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"><img src="Images/Ma-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="textcontent col-md-6">
+                        <h1 class="hero-title">Welcome to Our Store</h1>
+                        <p class="hero-subtitle">Discover the latest trends and exclusive deals</p>
+                        <a href="shop.html" class="btn hero-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">$29.99</p>
+                            <a href="product1.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">$25.99</p>
+                            <a href="product2.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="Images/product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">$39.99</p>
+                            <a href="product3.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="offer-card p-4 rounded">
+                        <h2 class="offer-title">Limited Time Offer!</h2>
+                        <p class="offer-description">Get 30% off on all items. Don't miss out on our biggest sale of the season!</p>
+                        <a href="shop.html" class="btn">Shop Now</a>
+                        <div class="countdown mt-3">
+                            <p class="countdown-text">Offer ends in:</p>
+                            <div class="countdown-timer">
+                                <span class="timer-item">00</span>:<span class="timer-item">00</span>:<span class="timer-item">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="Images/special.jpg" alt="Special Offer" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">What Our Customers Say</h2>
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 rounded">
+                        <p class="testimonial-text">“The products are fantastic! I’ve never been more satisfied with my purchases. Highly recommend!”</p>
+                        <h5 class="testimonial-author">Jane Doe</h5>
+                        <p class="testimonial-role">Verified Buyer</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 rounded">
+                        <p class="testimonial-text">“Amazing customer service and fast shipping. The quality of the items exceeded my expectations!”</p>
+                        <h5 class="testimonial-author">John Smith</h5>
+                        <p class="testimonial-role">Frequent Shopper</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 rounded">
+                        <p class="testimonial-text">“I love this store! Great selection, excellent prices, and top-notch service. The products are fantastic!.”</p>
+                        <h5 class="testimonial-author">Emily Johnson</h5>
+                        <p class="testimonial-role">Loyal Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Us Content -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="mb-4">About Us</h2>
+                    <p class="">We are a leading e-commerce company specializing in high-quality clothing and accessories. Our mission is to provide our customers with the best products and exceptional service. Founded in 2020, we have grown to become a trusted name in fashion, known for our commitment to quality and innovation.</p>
+                    <p class="">Our team is passionate about fashion and dedicated to delivering a superior shopping experience. We continually strive to stay ahead of the latest trends and offer our customers a diverse range of products. Thank you for choosing us, and we look forward to serving you!</p>
+                </div>
+                <!-- About Us Image -->
+                <div class="col-md-6">
+                    <img src="Images/about.jpg" alt="About Us" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-signup py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="signup-form p-4 rounded">
+                        <h2 class="text-center mb-4">Subscribe to Our Newsletter</h2>
+                        <p class="text-center mb-4">Stay updated with our latest news, special offers, and promotions.</p>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <button type="submit" class="btn btn-block">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog or Latest News Section -->
+    <section class="blog py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest News</h2>
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post p-4 rounded">
+                        <img src="Images/blog1.jpg" alt="Blog Post 1" class="img-fluid mb-3 rounded">
+                        <h3 class="blog-title">Blog Post Title 1</h3>
+                        <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post p-4 rounded">
+                        <img src="Images/blog2.jpg" alt="Blog Post 2" class="img-fluid mb-3 rounded">
+                        <h3 class="blog-title">Blog Post Title 2</h3>
+                        <p class="blog-excerpt">Vestibulum accumsan dui ut vehicula convallis. Donec nec risus ac justo tincidunt malesuada.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-post p-4 rounded">
+                        <img src="Images/blog3.jpg" alt="Blog Post 3" class="img-fluid mb-3 rounded">
+                        <h3 class="blog-title">Blog Post Title 3</h3>
+                        <p class="blog-excerpt">Sed cursus turpis ut dolor tincidunt, a facilisis elit dictum. Nulla facilisi. Curabitur sit amet tortor a velit.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="shop.html" class="text-light">Shop</a></li>
+                        <li><a href="about.html" class="text-light">About Us</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p>Email: <a href="mailto:info@example.com" class="text-light">info@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" class="text-light">+123 456 7890</a></p>
+                    <p>Address: 1234 Street Name, City, State, ZIP</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for cart icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

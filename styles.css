@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom styles for the dark theme navigation bar */
+.navbar {
+    padding: 20px 100px 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand img{
+    width: 250px;
+}
+
+#navbarNav li{
+    padding: 0px 15px;
+    position: relative;
+}
+
+#navbarNav ul{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: #5eb838; 
+}
+
+.navbar-light .navbar-brand {
+    color: #f8f9fa;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/%3E%3C/svg%3E');
+}
+
+/* Adjust cart icon styling */
+.nav-link .fa-shopping-cart {
+    color: black;
+}
+
+.nav-link .fa-shopping-cart:hover {
+    color: #5eb838;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Custom styles for the Hero section */
+.hero-section {
+    position: relative;
+    background: url('Images/fashion-model2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #5eb838;
+    border-radius: 50px;
+    color: #5eb838;  
+}
+
+.hero-btn:hover {
+    background-color: #5eb838;
+    color: #fff;
+}
+
+.row .textcontent {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Custom styles for the Featured Products section */
+.featured-products {
+    background-color: #fff; /* Dark background for the section */
+    color: black; /* Light text color */
+}
+
+.container h2 {
+    padding-bottom: 15px;
+}
+.featured-products .card {
+    text-align: center;
+    border: none; /* Remove card borders */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.featured-products .card:hover {
+    border: none; /* Remove card borders */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.featured-products .card img{
+    width: 320px;
+    height: 320px;
+}
+
+.featured-products .card .btn{
+    border: 1px solid #5eb838;
+    border-radius: 50px;
+    color: #5eb838; 
+}
+
+.featured-products .btn:hover {
+    color: white;
+    background-color: #5eb838;
+}
+
+.featured-products .card-title {
+    font-size: 1.25rem; /* Adjust card title font size */
+}
+
+.featured-products .card-text {
+    font-size: 1rem; /* Adjust card text font size */
+}
+
+.featured-products .btn-primary {
+    background-color: #007bff; /* Customize button color */
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .featured-products .card-title {
+        font-size: 1rem; /* Adjust title size for smaller screens */
+    }
+
+    .featured-products .card-text {
+        font-size: 0.875rem; /* Adjust text size for smaller screens */
+    }
+}
+
+/* Custom styles for the Special Offers section */
+.special-offers {
+    background-color: #fff; /* Dark background for the section */
+    color: black; /* Light text color */
+}
+
+.offer-card {
+    background-color: #fff; 
+    color: black;
+    border: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.offer-title {
+    font-size: 2rem; /* Larger font size for the title */
+    margin-bottom: 1rem;
+}
+
+.offer-description {
+    font-size: 1.125rem; /* Slightly larger font size for the description */
+    margin-bottom: 1.5rem;
+}
+
+.special-offers .btn {
+    border: 1px solid #5eb838;
+    border-radius: 50px;
+    color: #5eb838; 
+}
+
+.special-offers .btn:hover {
+    color: white;
+    background-color: #5eb838;
+}
+
+.countdown {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.countdown-text {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.countdown-timer {
+    font-size: 2rem;
+}
+
+.timer-item {
+    display: inline-block;
+    width: 2rem;
+    color: black;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .offer-title {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+
+    .offer-description {
+        font-size: 1rem; /* Adjust description size for smaller screens */
+    }
+
+    .countdown-timer {
+        font-size: 1.5rem; /* Adjust timer font size for smaller screens */
+    }
+
+    .timer-item {
+        width: 1.5rem;
+        padding: 0.25rem;
+    }
+}
+
+/* Custom styles for the Customer Testimonials section */
+.testimonials {
+    background-color: #fff; /* Dark background for the section */
+    color: black; /* Light text color */
+}
+
+.testimonial-card {
+    border: none; /* Remove card borders */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for card */
+}
+
+.testimonial-text {
+    font-size: 1rem; /* Font size for the testimonial text */
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    font-size: 1.25rem; /* Font size for the author’s name */
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-role {
+    font-size: 1rem; /* Font size for the role or description */
+    color: #adb5bd; /* Slightly lighter text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-text {
+        font-size: 0.875rem; /* Adjust text size for smaller screens */
+    }
+
+    .testimonial-author {
+        font-size: 1rem; /* Adjust author name size for smaller screens */
+    }
+
+    .testimonial-role {
+        font-size: 0.875rem; /* Adjust role size for smaller screens */
+    }
+}
+
+/* Custom styles for the About Us section */
+.about-bg {
+    position: relative;
+    background: url('Images/bg.jpg') no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.about-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+.about-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.about-section {
+    display: inline;
+    text-align: center;
+    margin: 50px;
+}
+
+.about-section h2 {
+    padding-top: 30px;
+}
+
+.about-section .mb-4 {
+    margin-bottom: 400px;
+}
+
+.about-us {
+    background-color: #fff; /* Dark background for the section */
+    color: black; /* Light text color */
+}
+
+.about-us h2 {
+    font-size: 2rem; /* Font size for the section title */
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    font-size: 1rem; /* Font size for the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 1.5rem;
+}
+
+.about-us img {
+    max-width: 100%; /* Ensure image is responsive */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us h2 {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+
+    .about-us p {
+        font-size: 0.875rem; /* Adjust paragraph text size for smaller screens */
+    }
+}
+
+/* Custom styles for the Newsletter Signup section */
+.newsletter-signup {
+    background-color: #fff; /* Dark background for the section */
+    color: black; /* Light text color */
+}
+
+.form-group input:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.form-group textarea:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.signup-form {
+    background-color: #fff; /* Slightly lighter dark background for the form */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for the form */
+}
+
+.signup-form h2 {
+    font-size: 2rem; /* Font size for the title */
+    margin-bottom: 1rem;
+}
+
+.signup-form p {
+    font-size: 1rem; /* Font size for the description */
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    background-color: #fff; /* Dark background for the input field */
+    color: black; /* Light text color */
+    border: 0.5px solid; /* Remove border */
+    border-radius: 2px;
+}
+
+.form-control::placeholder {
+    color: #ced4da; /* Placeholder text color */
+}
+
+.form-group .btn {
+    border: 1px solid #5eb838;
+    border-radius: 50px;
+    color: #5eb838; 
+}
+
+.form-group .btn:hover {
+    color: #fff;
+    background-color: #5eb838; 
+}
+
+.btn:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signup-form h2 {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+
+    .signup-form p {
+        font-size: 0.875rem; /* Adjust description size for smaller screens */
+    }
+}
+
+/* Custom styles for the Blog or Latest News section */
+.blog {
+    background-color: #fff; /* Dark background for the section */
+    color: black; /* Light text color */
+}
+
+.blog-post {
+    background-color: #fff; /* Slightly lighter dark background for the blog post */
+    border: none; /* Remove card borders */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for card */
+}
+
+.blog-title {
+    font-size: 1.5rem; /* Font size for the blog post title */
+    margin-bottom: 0.75rem;
+}
+
+.blog-excerpt {
+    font-size: 1rem; /* Font size for the blog post excerpt */
+    margin-bottom: 1rem;
+}
+
+.blog-post .btn {
+    border: 1px solid #5eb838;
+    border-radius: 50px;
+    color: #5eb838; 
+}
+
+.blog-post .btn:hover {
+    color: #fff;
+    background-color: #5eb838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 1.25rem; /* Adjust title size for smaller screens */
+    }
+
+    .blog-excerpt {
+        font-size: 0.875rem; /* Adjust excerpt size for smaller screens */
+    }
+}
+
+/* Custom styles for the Footer section */
+.footer {
+    background-color: rgb(28, 28, 28); /* Dark background for the footer */
+    color: #fff; /* Light text color */
+}
+
+.footer .container {
+    padding-top: 30px;
+}
+
+.footer .container .row {
+    padding-bottom: 10px;
+}
+.footer-title {
+    font-size: 1.25rem; /* Font size for footer section titles */
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-size: 1rem; /* Font size for paragraph text in the footer */
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.list-unstyled {
+    padding-left: 0; /* Remove padding for the list */
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem; /* Add space between list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 1rem; /* Adjust title size for smaller screens */
+    }
+
+    .footer p {
+        font-size: 0.875rem; /* Adjust paragraph text size for smaller screens */
+    }
+}
+
+
+/* Custom styles for the Navigation Bar and Pages */
+
+.section {
+    padding: 60px 0; /* General padding for sections */
+}
+
+.section h1 {
+    font-size: 2.5rem; /* Large font size for section titles */
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.25rem; /* Font size for section paragraphs */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.25rem;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.contact-section .form-group {
+   margin: 30px;
+   display: block;
+   position: relative;
+   left: 330px;
+}
+
+.contact-section .form-control {
+    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.contact-section .form-control {
+    max-width: 400px;
+}
+
+.contact-section .container {
+    
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section h1 {
+        font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+
+    .section p {
+        font-size: 1rem; /* Adjust paragraph text size for smaller screens */
+    }
+}
+
+.btn {
+    border: 1px solid #5eb838;
+    border-radius: 50px;
+    color: #5eb838;
+}
+
+.btn:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #5eb838;
+}
+
+.shop-section .card img {
+    width: 320px;
+    height: 320px;
+}
+
+.shop-section .card {
+    border: 0.5px solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.shop-section .card-body .btn{
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+/* Custom styles for the Navigation Bar and Pages */
+
+
+.nav-link {
+    color: #000; /* Dark text color for links */
+}
+
+.nav-link:hover {
+    color: #5eb838; /* Change color on hover */
+}
+
+.section {
+    padding: 60px 0; /* General padding for sections */
+}
+
+.section h1 {
+    font-size: 2.5rem; /* Large font size for section titles */
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.25rem; /* Font size for section paragraphs */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.25rem;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section h1 {
+        font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+
+    .section p {
+        font-size: 1rem; /* Adjust paragraph text size for smaller screens */
+    }
+}
